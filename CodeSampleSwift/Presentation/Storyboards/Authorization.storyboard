@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GyD-lz-kMW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Log In View Controller-->
+        <scene sceneID="0lg-Mj-Vk4">
+            <objects>
+                <viewController storyboardIdentifier="LogInViewController" id="GyD-lz-kMW" customClass="LogInViewController" customModule="CodeSampleSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MdV-Hm-SpA"/>
+                        <viewControllerLayoutGuide type="bottom" id="7TE-Ba-xNC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hbz-N8-exK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="JnQ-FF-9iP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDn-4x-QZI">
+                                <rect key="frame" x="100.5" y="577" width="174" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="CD1-C3-xdA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="LOG IN WITH FACEBOOK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapLoginButton:" destination="GyD-lz-kMW" eventType="touchUpInside" id="RgM-EM-1hv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="JnQ-FF-9iP" secondAttribute="trailing" id="2Bg-Fd-znR"/>
+                            <constraint firstItem="JnQ-FF-9iP" firstAttribute="top" secondItem="Hbz-N8-exK" secondAttribute="top" id="77R-LL-eYF"/>
+                            <constraint firstItem="7TE-Ba-xNC" firstAttribute="top" secondItem="JnQ-FF-9iP" secondAttribute="bottom" id="bmi-eO-FSc"/>
+                            <constraint firstItem="JnQ-FF-9iP" firstAttribute="leading" secondItem="Hbz-N8-exK" secondAttribute="leading" id="eRS-4e-7Du"/>
+                            <constraint firstItem="GDn-4x-QZI" firstAttribute="centerX" secondItem="Hbz-N8-exK" secondAttribute="centerX" id="ttB-Za-7j5"/>
+                            <constraint firstItem="7TE-Ba-xNC" firstAttribute="top" secondItem="GDn-4x-QZI" secondAttribute="bottom" constant="50" id="xbq-TJ-lq9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Mj5-lH-vyt"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iEx-uK-Nfr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="464.80000000000001" y="-68.815592203898049"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="505" height="789"/>
+    </resources>
+</document>
